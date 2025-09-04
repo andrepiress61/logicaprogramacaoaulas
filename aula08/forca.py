@@ -30,6 +30,10 @@ def escolher_palavras(escolha):
             # escolhe uma palavra na categoria comidas
             return random.choice(palavras["comidas"])
 
+    elif escolha == "4":
+        print('Saindo...')
+        exit()
+
     # se a escolha for invalida
     else:
         print('Opção invalida.')
@@ -69,11 +73,13 @@ def jogar_forca():
         # se o usuario acertar a palavra
         if palavra_escondida == palavra:
             print("Voce ganhou ")
+            menu()
             break
 
         # se o usuario acabar com todas as tentativas
         elif tentativas == 0:
             print(f"Você perdeu,a palavra era {palavra}")
+            menu()
             break
 
         # usuario escolhe uma letra
@@ -100,7 +106,8 @@ def menu():
     print("1 - Animais ")
     print("2 - Objetos da cozinha ")
     print("3 - Comida ")
-    
+    print('4 - Sair')
+
     # usuario escolhe qual tema de forca
     escolha = input('Escolha um dos temas: ')
     
