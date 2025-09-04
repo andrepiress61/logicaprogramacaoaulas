@@ -1,0 +1,5 @@
+{
+    "animais": ["elefante","jacaré","pinguim","camaleão","tamanduá","coruja","tubarão","ornitorrinco"],
+    "objetos": ["colher","panela","liquidificador","espremedor","garfo","tábua","chaleira","escorredor"],
+    "comidas": ["lasanha","abacate","feijoada","sushi","brigadeiro","farofa","panqueca","cuscuz"]
+}
