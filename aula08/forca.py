@@ -30,6 +30,9 @@ while True:
 
         # função para escolher a palavra baseada no tema
         def escolher_palavras(escolha):
+            # variavel global
+            global tema
+
             # encontra o arquivo json
             with open ('palavras.json', 'r', encoding='utf-8') as f:
                 # salva o resultado em uma variavel
@@ -38,14 +41,17 @@ while True:
             match escolha:
                 # posiveis escolhas
                 case "1":
+                    tema = 'Animais'
                     # escolhe uma palavra na categoria animais
                     return random.choice(palavras["animais"])
 
                 case '2':
+                    tema = 'Objetos'
                     # escolhe uma palavra na categoria objetos
                     return random.choice(palavras["objetos"])
 
                 case '3':
+                    tema = 'Comidas'
                     # escolhe uma palavra na categoria comidas
                     return random.choice(palavras["comidas"])
 
@@ -83,6 +89,7 @@ while True:
                     else:
                         palavra_escondida += "_"
 
+                print(f'Tema: {tema}')
                 print('Palavra escondida',palavra_escondida)
                 print("Letras erradas",letras_erradas)
                 print("Tentativas",tentativas)
