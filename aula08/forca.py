@@ -35,26 +35,27 @@ while True:
                 # salva o resultado em uma variavel
                 palavras = json.load(f)
             
-            # posiveis escolhas
-            if escolha == "1":
-                # escolhe uma palavra na categoria animais
-                return random.choice(palavras["animais"])
+            match escolha:
+                # posiveis escolhas
+                case "1":
+                    # escolhe uma palavra na categoria animais
+                    return random.choice(palavras["animais"])
 
-            elif escolha == '2':
-                # escolhe uma palavra na categoria objetos
-                return random.choice(palavras["objetos"])
+                case '2':
+                    # escolhe uma palavra na categoria objetos
+                    return random.choice(palavras["objetos"])
 
-            elif escolha == '3':
-                # escolhe uma palavra na categoria comidas
-                return random.choice(palavras["comidas"])
+                case '3':
+                    # escolhe uma palavra na categoria comidas
+                    return random.choice(palavras["comidas"])
 
-            elif escolha == "4":
-                print('Saindo...')
-                exit()
+                case '4':
+                    print('Saindo...')
+                    exit()
 
-            # se a escolha for invalida
-            else:
-                print('Opção invalida.')
+                # se a escolha for invalida
+                case _:
+                    print('Opção invalida.')
 
         # função de jogar
         def jogar_forca(palavra):
