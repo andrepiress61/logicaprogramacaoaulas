@@ -102,7 +102,7 @@ def menu():
     global escolha
 
     # menu
-    (20*"-", "MENU FORCA", 20*"-")
+    print(20*"-", "MENU FORCA", 20*"-")
     print("1 - Animais ")
     print("2 - Objetos da cozinha ")
     print("3 - Comida ")
