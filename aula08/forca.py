@@ -9,7 +9,7 @@ def escolher_palavras(escolha):
     if escolha == "1":
         # encontra o arquivo json
         with open ('palavras.json', 'r', encoding='utf-8') as f:
-            # salva o arquivo em uma variavel
+            # salva o resultado em uma variavel
             palavras = json.load(f)
             # escolhe uma palavra na categoria animais
             return random.choice(palavras["animais"])
@@ -17,7 +17,7 @@ def escolher_palavras(escolha):
     elif escolha == '2':
         # encontra o arquivo json
         with open ('palavras.json', 'r', encoding='utf-8') as f:
-            # salva o arquivo em uma variavel
+            # salva o resultado em uma variavel
             palavras = json.load(f)
             # escolhe uma palavra na categoria objetos
             return random.choice(palavras["objetos"])
@@ -25,7 +25,7 @@ def escolher_palavras(escolha):
     elif escolha == '3':
         # encontra o arquivo json
         with open ('palavras.json', 'r', encoding='utf-8') as f:
-            # salva o arquivo em uma variavel
+            # salva o resultado em uma variavel
             palavras = json.load(f)
             # escolhe uma palavra na categoria comidas
             return random.choice(palavras["comidas"])
