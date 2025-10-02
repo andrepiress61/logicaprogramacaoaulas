@@ -92,5 +92,5 @@ else:
 #Operadores ternarios
 nome = input("Digite seu nome:")
 idade = int(input("Digite sua idade:"))
-#Verdadeiro ou Falso 
+#Verdadeiro ou Falso  
 print(nome, "é maior de idade" if idade >=18 else 'é menor de idade')
